@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './header.css';
+import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 import User from '../Assets/user.jpg';
 import Logo from '../Assets/logo.png';
 import Shoes from '../Assets/shoes.png';
@@ -74,7 +76,7 @@ function Header() {
                                         <p className='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor morbi velit turpis et dolor sit morbi odio id. Aliquam ultricies tortor ac.</p>
 
                                     </div>
-                                    <span className='shop-btn'>Shop Now</span>
+                                    <Button bsPrefix="btn-pink" variant="outline-warning" className='shop-btn small bgGray btn-pink-outline-warning text-uppercase' as={Link} to="/Buynowpage">Shop Now</Button>
                                     <img src={Plen} alt="Shoes img" className='plen-img' />
                                     <div className='main-rating'>
                                         <div className='rating-stars'>
